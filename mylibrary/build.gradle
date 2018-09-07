@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 25
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packageBuildConfig(false)
+
+}
+task deleteOldJar(type: Delete) {
+    delete 'build/libs/myclasses_V1.0.jar'
+}
+task exportJar(type: Copy) {
+    from('build/intermediates/bundles/release')
+    into('build/libs/')
+    include('classes.jar')
+    rename('classes.jar', 'myclasses_V1.1.0.jar')
+}
+exportJar.dependsOn(deleteOldJar, build)
+
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.0'
+    testCompile 'junit:junit:4.12'
+    compile fileTree(include: ['*.jar'], exclude: ['classes.jar'], dir: 'libs')
+    provided files('libs/classes.jar')
+    implementation files('libs/AMap_Location_V4.1.0_20180619.jar')
+
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+//    implementation 'me.yatoooon:screenadaptation:1.1.1'//适配布局
+//    compile 'com.google.code.gson:gson:2.7'
+//    compile 'com.squareup.okhttp:okhttp:2.7.0'
+//    compile 'com.android.support:recyclerview-v7:26+'
+}

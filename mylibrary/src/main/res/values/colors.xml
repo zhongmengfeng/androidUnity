@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colortext">#3c5ad2</color>
+    <color name="grey">#aaaaaa</color>
+    <color name="touming">#8000000F</color>
+    <color name="color">#5cb5ff</color>
+    <color name="textcolor">#2bbcec</color>
+    <color name="colorwhile">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9a9a9a</color>
+    <color name="Comment_name">#327ebe</color>
+    <color name="Comment">#505050</color>
+    <color name="color585858">#585858</color>
+    <color name="color848484">#848484</color>
+    <color name="color03b7d8">#03b7d8</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="translucent_white">#61FFFFFF</color>
+    <color name="colorafafaf">#afafaf</color>
+    <color name="color3f3f3f">#3f3f3f</color>
+    <color name="colorefbf58">#efbf58</color>
+    <color name="coloref5a5a">#ef5a5a</color>
+    <color name="color222222">#222222</color>
+    <color name="framlaylout_color">#eff6f6f6</color>
+    <color name="gray_color">#8f000000</color>
+    <color name="text_click_color">#d0d0d0</color>
+    <color name="theme_color">#03b7d8</color>
+    <color name="wihte_line_color">#9ae4eb</color>
+    <color name="grey_line_color">#c5c5c5</color>
+
+    <color name="album_FontLight">#FFF</color>
+</resources>

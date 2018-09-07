@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tset_little">25px</dimen>
+    <dimen name="tset_small">31px</dimen>
+    <dimen name="tset_center">35px</dimen>
+    <dimen name="tset_middle">41px</dimen>
+    <dimen name="tset_big">43px</dimen>
+
+    <dimen name="tset_little2">30px</dimen>
+    <dimen name="tset_small2">36px</dimen>
+    <dimen name="tset_center2">40px</dimen>
+    <dimen name="tset_middle2">46px</dimen>
+    <dimen name="tset_big2">48px</dimen>
+
+    <dimen name="tset_little3">40px</dimen>
+    <dimen name="tset_small3">46px</dimen>
+    <dimen name="tset_center3">50px</dimen>
+    <dimen name="tset_middle3">56px</dimen>
+    <dimen name="tset_big3">60px</dimen>
+
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">5dp</dimen>
+    <dimen name="dp_7">5dp</dimen>
+    <dimen name="dp_8">5dp</dimen>
+    <dimen name="dp_9">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+</resources>

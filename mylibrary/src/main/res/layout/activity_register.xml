@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/reg_bg_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_color"
+        android:orientation="vertical"
+        android:paddingLeft="80px"
+        android:paddingRight="80px">
+
+        <ImageView
+            android:id="@+id/reg_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/bg_fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="137px"
+            android:layout_marginTop="230px"
+            android:gravity="center"
+            android:text="输入手机号码"
+            android:textColor="@color/colorwhile"
+            android:textSize="72px" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_region"
+            android:layout_width="match_parent"
+            android:layout_height="146px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_6"
+                android:text="选择国家和地区"
+                android:textColor="@color/colorwhile"
+                android:textSize="?textsize_46" />
+
+            <TextView
+                android:id="@+id/countryTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_6"
+                android:text="中国大陆"
+                android:textColor="@color/colorwhile"
+                android:textSize="?textsize_48" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30px"
+                android:src="@drawable/icon_while" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line_while"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="146px">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+86"
+                android:textColor="@color/colorwhile"
+                android:textSize="?textsize_46" />
+
+
+            <EditText
+                android:id="@+id/r_phone"
+                android:layout_width="match_parent"
+                android:layout_height="146px"
+                android:layout_alignEnd="@+id/reg_next"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="@dimen/dp_6"
+                android:singleLine="true"
+                android:textColor="@color/colorwhile"
+                android:textColorHint="@color/colorwhile"
+                android:textSize="?textsize_46" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line_while"></include>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_next"
+        android:layout_marginBottom="137px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/reg_next"
+            android:layout_width="920px"
+            android:layout_height="120px"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/background_bluck"
+            android:enabled="false"
+            android:stateListAnimator="@null"
+            android:text="下 一 步"
+            android:textColor="@color/colorwhile"
+            android:textSize="60px" />
+    </FrameLayout>
+</RelativeLayout>
+

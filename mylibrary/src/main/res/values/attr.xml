@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textsize_30" format="reference|dimension" />
+    <attr name="textsize_36" format="reference|dimension" />
+    <attr name="textsize_40" format="reference|dimension" />
+    <attr name="textsize_46" format="reference|dimension" />
+    <attr name="textsize_48" format="reference|dimension" />
+</resources>
